@@ -3,10 +3,64 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Iniciar Sesión | MetaStore</title>
+        <link rel="stylesheet" href="css/style.css"></link>
+        <link rel="shortcut icon" type="image/png" href="images/cart.png"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <!-- Boxiocns CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </h:head>
+    
     <h:body>
-        Hello from Facelets
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Crear Cuenta</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>o utilize su correo para el registro</span>
+                    <input type="text" placeholder="Usuario" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Contraseña" />
+                    <button>Registrarte</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Iniciar Sesión</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>o use su cuenta</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Contraseña" />
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button>Ingresar</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <img src="images/METASTORE.png" width="201" height="132" alt="METASTORE"/>
+                        <h1>Bienvenido!</h1>
+                        <p>Para mantenerse en contacto con nosotros, inicie sesión con sus datos personales</p>
+                        <button class="ghost" id="signIn">Iniciar Sesión</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <img src="images/METASTORE.png" width="201" height="132" alt="METASTORE"/>
+                        <h1>¿Hola!</h1>
+                        <p>¿Aún no estás registrado?, ¡Únete a la mejor tienda online!</p>
+                        <button class="ghost" id="signUp" >Registrate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="JS/botones.js"></script>
     </h:body>
 </html>
 
